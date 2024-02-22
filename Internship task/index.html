@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Images</title>
+
+    <style>
+      body {
+        margin: 20px;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      h1,
+      span {
+        margin: 3px;
+        padding: 3px;
+      }
+
+      span {
+        color: rgb(120, 214, 184);
+      }
+
+      .image_container {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      div {
+        background-color: rgb(243, 238, 230);
+        margin-bottom: 30px;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+
+      img {
+        object-fit: cover;
+        width: 300px;
+        height: 200px;
+      }
+
+      h4,
+      p {
+        text-align: center;
+        margin: 3px;
+        padding: 3px;
+      }
+
+      p {
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+
+      div:hover {
+        background-color: rgb(120, 214, 184);
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Select Doctor</h1>
+      <span>-------------------------</span>
+    </header>
+
+    <div1 class="image_container">
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const imageData = [
+            {
+              image:
+                "https://media.gettyimages.com/id/1292015214/photo/portrait-female-doctor-stock-photo.jpg?s=612x612&w=0&k=20&c=nr4XaWnRPQnWqwhzahajZhskIDG1yK9DmIteV5gpUOI=",
+            },
+
+            {
+              image:
+                "https://img.freepik.com/premium-photo/happy-smiling-doctor-writing-recipe-clipboard_255757-1516.jpg?size=626&ext=jpg&ga=GA1.1.1678161048.1708611720&semt=ais",
+            },
+
+            {
+              image:
+                "https://img.freepik.com/free-photo/portrait-doctor_144627-39389.jpg?size=626&ext=jpg&ga=GA1.1.1678161048.1708611720&semt=ais",
+            },
+
+            {
+              image:
+                "https://images.pexels.com/photos/6749770/pexels-photo-6749770.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+            },
+         
+
+            {
+              image:
+                "https://img.freepik.com/free-photo/attractive-medical-professional-uniform-standing-with-arms-crossed-against-isolated-background_662251-416.jpg?size=626&ext=jpg&ga=GA1.1.1678161048.1708611720&semt=ais",
+            },
+            {
+              image:
+                "https://media.istockphoto.com/id/1346124900/photo/confident-successful-mature-doctor-at-hospital.jpg?s=612x612&w=0&k=20&c=S93n5iTDVG3_kJ9euNNUKVl9pgXTOdVQcI_oDGG-QlE=",
+            },
+
+            {
+              image:
+                "https://images.pexels.com/photos/8376318/pexels-photo-8376318.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+            },
+
+       
+
+        
+            {
+              image:
+                "https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?size=626&ext=jpg&ga=GA1.1.1678161048.1708611720&semt=ais",
+            },
+
+            {
+              image:
+                "https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg?size=626&ext=jpg&ga=GA1.1.1678161048.1708611720&semt=ais",
+            },
+            
+            {
+              image:
+                "https://media.istockphoto.com/id/1955337898/photo/doctor-looking-at-computer-in-office.jpg?s=612x612&w=0&k=20&c=gzWk3Gt4aOUYk_t9mSV1MEOVrDL9zAfiyRXZmrcytfI=",
+            },
+
+            {
+              image:
+                "https://img.freepik.com/free-photo/expressive-young-woman-posing-studio_176474-66963.jpg?w=1060&t=st=1708611798~exp=1708612398~hmac=542e7ae666abe5a2ece270fc3109e37de125905b953e038502346f83bb128c45",
+            },
+        
+
+            {
+              image:
+                "https://media.istockphoto.com/id/1434687410/photo/portrait-of-happy-and-successful-african-american-doctor-man-working-inside-office-clinic.jpg?s=612x612&w=0&k=20&c=kKvUmzkotN3FrWTGgS3ar2mm4SLwlV3cbiNC-Bp12YI=",
+            },
+
+
+            {
+              image:
+                "https://media.istockphoto.com/id/671290874/photo/portrait-of-a-female-doctor.jpg?s=612x612&w=0&k=20&c=mQXp_gLFIN2YyyO_hlLc0VFlAYfbHiHK6lroJp0dtVw=",
+            },
+
+            {
+              image:
+                "https://media.istockphoto.com/id/1327024466/photo/portrait-of-male-doctor-in-white-coat-and-stethoscope-standing-in-clinic-hall.jpg?s=612x612&w=0&k=20&c=49wqOwwuonk9f8NACL7M_5RosqQPFwJ8-dpmeo9AvQw=",
+            },
+
+            {
+              image:
+                "https://media.istockphoto.com/id/1346711310/photo/portrait-of-smiling-female-doctor-wearing-uniform-standing.jpg?s=612x612&w=0&k=20&c=nPsBL7HwQ7y14HP6J7lcCyKl51X5pPSPGnweXHFzT9o=",
+            },
+
+            {
+              image:
+                "https://images.pexels.com/photos/5452186/pexels-photo-5452186.jpeg?auto=compress&cs=tinysrgb&w=400",
+            },
+
+            
+            {
+              image:
+                "https://media.gettyimages.com/id/1365582863/photo/female-doctor-in-hospital-looking-at-digital-tablet.jpg?s=612x612&w=0&k=20&c=FKaZ3-j86CnjGizaJQ3q57DY_16Gjw9RQwFHXGVAvFA=",
+            },
+
+            {
+              image:
+                "https://media.gettyimages.com/id/1307155498/photo/smiling-male-doctor-against-gray-background.jpg?s=612x612&w=0&k=20&c=aUeeX6ygz7JmykqBAzOPX-DvGWKpt_ms3wStqup3ytM=",
+            },
+    
+            {
+              image:
+                "https://media.gettyimages.com/id/1390886669/photo/homecare-visit-with-a-senior-woman.jpg?s=612x612&w=0&k=20&c=JXJvQCOn6MqqrKjSFk2VSBbxDD-1NbSKFF6r8_2xLcA=",
+            },
+
+            {
+              image:
+                "https://media.istockphoto.com/id/1470505343/photo/the-male-doctor-reads-a-females-patient-results-sitting-by-the-office-desk.jpg?s=612x612&w=0&k=20&c=D_ELFF7L4Mkhx20Hw-juqYfHcUqgCzml9hPFdNmG8qg=",
+            },
+
+            {
+              image:
+                "https://media.gettyimages.com/id/1147479249/photo/technology-cuts-my-work-in-half.jpg?s=612x612&w=0&k=20&c=2GN_MCr-DRNdJi39tw7ZcXBVmHZIrWpYeKl8vNjwdYI=",
+            },
+
+            {
+              image:
+                "https://media.istockphoto.com/id/1642009329/photo/portrait-of-female-doctor-in-her-office.jpg?s=612x612&w=0&k=20&c=PSsS74M87baycCz4cAerxn3K7yFzvTV0ksI7IXkOpTA=",
+            },
+
+            {
+              image:
+                "https://cdn.pixabay.com/photo/2017/03/14/03/20/woman-2141808_640.jpg",
+            },
+
+            {
+              image:
+                "https://img.freepik.com/free-photo/expressive-senior-woman-posing_344912-974.jpg?size=626&ext=jpg&ga=GA1.1.1678161048.1708611720&semt=ais",
+            },
+
+            {
+              image:
+                "https://media.istockphoto.com/id/1373258553/photo/smiling-mature-doctor-in-hospital-hallway.jpg?b=1&s=612x612&w=0&k=20&c=bA1fovbHbETnnjusgEd3Y4D6XAi92pTXhvn4GqJaxZY=",
+            },
+          ];
+
+          const doctorData = [
+            { name: "Dr. Emily Smith", specialty: "Cardiologist" },
+            { name: "Dr. James Johnson", specialty: "Orthopedic Surgeon" },
+            { name: "Dr. Sarah Davis", specialty: "Pediatrician" },
+            { name: "Dr. Robia Miller", specialty: "Oncologist" },
+            { name: "Dr. Jessica White", specialty: "Neurologist" },
+            { name: "Dr. Michael Brown", specialty: "Dermatologist" },
+            { name: "Dr. Olivia Taylor", specialty: "Gastroenterologist" },
+            { name: "Dr. Daniel Wilson", specialty: "Endocrinologist" },
+            { name: "Dr. Amanda Johnson", specialty: "Rheumatologist" },
+            { name: "Dr. Christopher Martinez", specialty: "Urologist" },
+            { name: "Dr. Lauren Davis", specialty: "Obstetrician" },
+            { name: "Dr. Benjamin Anderson", specialty: "Ophthalmologist" },
+            { name: "Dr. Sophia Robinson", specialty: "Psychiatrist" },
+            { name: "Dr. Ethan Hall", specialty: "Pulmonologist" },
+            { name: "Dr. Lily Moore", specialty: "Allergist" },
+            { name: "Dr. Nathan Harris", specialty: "Hematologist" },
+            { name: "Dr. Zoe Clark", specialty: "Gynecologist" },
+            { name: "Dr. Samuel Lewis", specialty: "Plastic Surgeon" },
+            { name: "Dr. Grace Turner", specialty: "Nephrologist" },
+            { name: "Dr. Isaac Adams", specialty: "Gynecologic Oncologist" },
+            {
+              name: "Dr. Ava Martinez",
+              specialty: "Infectious Disease Specialist",
+            },
+            { name: "Dr. Jasmin Wright", specialty: "Podiatrist" },
+            {
+              name: "Dr. Mia Carter",
+              specialty: "Emergency Medicine Physician",
+            },
+            { name: "Dr. Eva Brown", specialty: "Geriatrician" },
+            {
+              name: "Dr. Chloe Foster",
+              specialty: "Family Medicine Physician",
+            },
+          ];
+
+          imageData.slice(0, 25).forEach((item, index) => {
+            const doctorInfo = doctorData[index];
+            createImageElement(
+              item.image,
+              doctorInfo.name,
+              doctorInfo.specialty
+            );
+          });
+        });
+
+        function createImageElement(imageUrl, doctorName, doctorSpecialty) {
+          const container = document.createElement("div");
+          const img = document.createElement("img");
+          const docName = document.createElement("h4");
+          const docInfo = document.createElement("p");
+
+          img.src = imageUrl;
+          docName.textContent = `${doctorName}`;
+          docInfo.textContent = `${doctorSpecialty}`;
+
+          container.appendChild(img);
+          container.appendChild(docName);
+          container.appendChild(docInfo);
+
+          document.body
+            .querySelector(".image_container")
+            .appendChild(container);
+        }
+      </script>
+    </div1>
+  </body>
+</html>
